@@ -22,15 +22,15 @@
       document.querySelector("footer").innerHTML = data;
     });
 
-  fetch("page_contact.html")
-    .then(response => {
-      if (response.ok) {
+  const pageContact = document.querySelector(".page-contact__wrap");
+  if (pageContact !== null) {
+    fetch("page_contact.html")
+      .then(response => {
         return response.text()
-      } else {
-        throw new Error();
-      }
-    })
-    .then(data => {
-      document.querySelector(".page-contact__wrap").innerHTML = data;
-    })
-    .catch((error) => console.log(error));
+      })
+      .then(data => {
+        pageContact.innerHTML = data;
+      });
+  } else {
+
+  };
