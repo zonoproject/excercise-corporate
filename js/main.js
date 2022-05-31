@@ -24,14 +24,26 @@
 
   fetch("page_contact.html")
     .then(response => {
-      return response.text()
+      if (response.ok) {
+        return response.text()
+      } else {
+        throw new Error();
+      }
     })
     .then(data => {
-      if (!data == null) {
-        // ignore
-      }
       document.querySelector(".page-contact__wrap").innerHTML = data;
     })
     .catch(error => {
-      return null;
+      return error;
     });
+  // fetch("page_contact.html")
+  //   .then(response => {
+  //     return response.text()
+  //   })
+  //   .then(data => {
+  //     if (!data == null) {
+  //       // ignore
+  //     }
+  //     document.querySelector(".page-contact__wrap").innerHTML = data;
+  //   })
+  //   .catch((error) => console.log(error));
