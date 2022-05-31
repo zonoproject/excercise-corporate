@@ -22,15 +22,19 @@
       document.querySelector("footer").innerHTML = data;
     });
 
-  const pageContact = document.querySelector(".page-contact__wrap");
-  if (pageContact !== null) {
-    fetch("page_contact.html")
-      .then(response => {
-        return response.text()
-      })
-      .then(data => {
-        pageContact.innerHTML = data;
-      });
-  } else {
+  try {
+    const pageContact = document.querySelector(".page-contact__wrap");
+    if (pageContact !== null) {
+      fetch("page_contact.html")
+        .then(response => {
+          return response.text()
+        })
+        .then(data => {
+          pageContact.innerHTML = data;
+        });
+    } else {
+      throw new Error();
+    }
+  } catch (e) {
 
-  };
+  }
