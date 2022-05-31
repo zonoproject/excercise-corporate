@@ -33,17 +33,4 @@
     .then(data => {
       document.querySelector(".page-contact__wrap").innerHTML = data;
     })
-    .catch(error => {
-      return error;
-    });
-  // fetch("page_contact.html")
-  //   .then(response => {
-  //     return response.text()
-  //   })
-  //   .then(data => {
-  //     if (!data == null) {
-  //       // ignore
-  //     }
-  //     document.querySelector(".page-contact__wrap").innerHTML = data;
-  //   })
-  //   .catch((error) => console.log(error));
+    .catch((error) => console.log(error));
