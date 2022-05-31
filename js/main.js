@@ -1,13 +1,3 @@
-// ドロワーメニュー
-window.addEventListener('load', function () {
-  const target = document.getElementById("menu");
-  target.addEventListener('click', () => {
-    target.classList.toggle('open');
-    const nav = document.getElementById("nav");
-    nav.classList.toggle('in');
-  });
-});
-
 // インクルード
 fetch("header.html")
   .then(response => {
@@ -38,3 +28,13 @@ fetch("page_contact.html")
   .catch(error => {
     // ignore
   });
+
+// ドロワーメニュー
+window.addEventListener('load', function () {
+  const target = document.getElementById("menu");
+  target.addEventListener('click', () => {
+    target.classList.toggle('open');
+    const nav = document.getElementById("nav");
+    nav.classList.toggle('in');
+  });
+});
