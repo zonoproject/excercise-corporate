@@ -1,0 +1,24 @@
+.news__item:not(:first-child) {
+  margin-top: 10px;
+}
+.news__item-link {
+  display: flex;
+  align-items: center;
+  border: 1px solid #222;
+  padding: 20px;
+}
+
+.news__item-date {
+  margin-right: 10px;
+}
+
+.news__item-ttl {
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .news__item-link {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

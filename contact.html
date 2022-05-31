@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社TECH</title>
+  <meta name="description" content="株式会社TECHのコーポレートサイトです。">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header"></header>
+  <!-- header END -->
+
+  <!-- page-mv -->
+  <div class="page-mv__wrap">
+    <h1 class="page-mv__ttl ttl">お問い合わせ</h1>
+  </div>
+  <!-- page-mv END -->
+
+  <main>
+    <div class="content__wrap content-s content-pd">
+      <form class="content__form" action="index.html" method="post">
+        <div class="contact__form-item">
+          <label for="company" class="contact__form-item-name">会社名</label>
+          <input type="text" id="company" class="contact__form-item-input">
+        </div>
+        <div class="contact__form-item">
+          <label for="name" class="contact__form-item-name">お名前<span class="contact__form-item-required">*</span></label>
+          <input type="text" id="name" class="contact__form-item-input" required>
+        </div>
+        <div class="contact__form-item">
+          <label for="email" class="contact__form-item-name">メールアドレス<span class="contact__form-item-required">*</span></label>
+          <input type="text" id="email" class="contact__form-item-input" required>
+        </div>
+        <div class="contact__form-item">
+          <label for="inquiry" class="contact__form-item-name">お問い合わせ内容<span class="contact__form-item-required">*</span></label>
+          <textarea id="inquiry" class="contact__form-item-input contact__form-item-input--textarea" rows="8" cols="80" required></textarea>
+        </div>
+        <input type="submit" value="お申し込み" class="contact__form-submit">
+      </form>
+    </div>
+
+  </main>
+  <!-- footer -->
+  <footer class="footer bg-black"></footer>
+  <!-- footer END -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

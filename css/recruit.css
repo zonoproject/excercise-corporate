@@ -1,0 +1,34 @@
+.recruit__info:not(:first-child) {
+  margin-top: 80px;
+}
+
+.recruit__info-ttl {
+  font-size: 26px;
+  border-bottom: 1px solid #222;
+}
+
+.recruit__info-txt {
+  margin-top: 20px;
+}
+
+.recruit__info-table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.recruit__info-table-name {
+  background: #f5f6f9;
+  width: 30%;
+}
+
+.recruit__info-table-data {
+  width: 70%;
+}
+
+.recruit__info-table-name,
+.recruit__info-table-data {
+  padding: 10px;
+  border: 1px solid #222;
+}
+
+@media screen and (max-width: 768px) {}

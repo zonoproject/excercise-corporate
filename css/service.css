@@ -1,0 +1,33 @@
+.service__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #222;
+  padding: 20px 0;
+}
+
+.service__item:last-child {
+  border-bottom: 1px solid #222;
+}
+
+.service__item-img {
+  width: 290px;
+}
+
+.service__item-ttl {
+  font-size: 24px;
+}
+
+.service__item-txt-wrap {
+  width: calc(100% - 330px);
+}
+
+@media screen and (max-width: 768px) {
+  .service__item-img {
+    width: 100%;
+  }
+
+  .service__item-txt-wrap {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.company__table {
+  width: 100%;
+}
+
+.company__table-tr {
+  display: flex;
+  border-top: 1px solid #222;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.company__table-tr:last-child {
+  border-bottom: 1px solid #222;
+}
+
+.company__table-name {
+  width: 30%;
+}
+
+.company__table-data {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {}

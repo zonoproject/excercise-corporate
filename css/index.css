@@ -1,0 +1,176 @@
+/* top-mv */
+.top-mv__wrap {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;
+  color: #fff;
+}
+
+.top-mv__txt--ja {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.top-mv__txt--en {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* top-mind */
+.top-mind__wrap {
+  color: #fff;
+}
+
+.top-mind__txt {
+  margin-top: 20px;
+}
+
+/* top-service */
+.top-service__ttl {
+  text-align: center;
+}
+
+.top-service__item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.top-service__item {
+  width: 49%;
+  margin-top: 20px;
+  margin-right: calc(100% - (49% * 2));
+}
+
+.top-service__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.top-service__item-ttl {
+  font-size: 18px;
+}
+
+/* top-news */
+.top-news__ttl-wrap {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.top-news__ttl {
+  color: #fff;
+}
+
+.top-news__btn {
+  display: inline-block;
+  width: 160px;
+  font-size: 14px;
+  padding: 7px;
+  margin: auto 0;
+}
+
+.top-news__item-wrap {
+  margin-top: 20px;
+}
+
+.top-news__item {
+  background: #fff;
+  padding: 20px;
+}
+
+.top-news__item-link {
+  display: flex;
+}
+
+.top-news__item-date {
+  margin-right: 10px;
+}
+
+.top-news__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+/* top-blog */
+.top-blog__ttl {
+  text-align: center;
+}
+
+.top-blog__item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.top-blog__item {
+  width: 32%;
+  margin-right: calc((100% - (32% * 3)) / 2);
+}
+
+.top-blog__item:last-child {
+  margin-right: 0px;
+}
+
+.top-blog__item-date {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.top-blog__item-ttl {
+  font-size: 18px;
+}
+
+/* top-company-recruit */
+.top-company-recruit__wrap {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 80px;
+}
+
+.top-company-recruit__item {
+  text-align: center;
+  width: 50%;
+}
+
+.top-company-recruit__link {
+  display: inline-block;
+  width: 100%;
+  line-height: 10;
+  color: #fff;
+}
+
+/* top-company */
+.top-company__link {
+  background: #cd0224;
+}
+
+/* top-recruit */
+.top-recruit__link {
+  background: #222;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* top-service */
+  .top-service__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* top-news */
+  .top-news__item {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* top-blog */
+  .top-blog__item {
+    width: 100%;
+    margin-right: 0;
+  }
+}

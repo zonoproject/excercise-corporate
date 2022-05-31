@@ -1,0 +1,35 @@
+.blog__ttl {
+  text-align: center;
+}
+
+.blog__item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog__item {
+  width: 32%;
+  margin-right: calc((100% - (32% * 3)) / 2);
+  margin-top: 20px;
+}
+
+.blog__item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.blog__item-date {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.blog__item-ttl {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
